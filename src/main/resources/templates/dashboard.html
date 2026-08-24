@@ -1,0 +1,5 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Dashboard | Milfoil</title><link rel="stylesheet" th:href="@{/css/app.css}"></head>
+<body><main class="panel"><p class="eyebrow">Authenticated</p><h1 th:text="${user.attributes['name'] ?: user.name}">User</h1><p th:text="${user.attributes['email'] ?: 'GitHub account connected'}">GitHub account connected</p><form th:action="@{/logout}" method="post"><button class="button" type="submit">Sign out</button></form></main></body>
+</html>

@@ -1,0 +1,9 @@
+:root { color-scheme: light; font-family: Georgia, serif; color: #18312b; background: #e6eee6; }
+body { min-height: 100vh; margin: 0; display: grid; place-items: center; background: radial-gradient(circle at 15% 20%, #f5f0d8 0 18%, transparent 19%), linear-gradient(135deg, #d5e6d7, #f5e9d1); }
+.panel { width: min(88vw, 34rem); padding: 3.5rem; background: #fffdf5; border: 1px solid #18312b; box-shadow: 12px 12px 0 #b7cdb8; }
+.eyebrow { margin: 0 0 1rem; font: 700 .8rem/1.2 sans-serif; letter-spacing: .15em; text-transform: uppercase; color: #b15339; }
+h1 { margin: 0 0 1rem; font-size: clamp(2.6rem, 8vw, 4.8rem); line-height: .95; font-weight: 400; }
+p { font: 1.1rem/1.6 sans-serif; }
+.button { display: inline-block; margin-top: 1.4rem; padding: .85rem 1.1rem; border: 0; background: #b15339; color: #fffdf5; font: 700 .95rem sans-serif; text-decoration: none; cursor: pointer; }
+.back { display: block; margin-top: 1.25rem; color: #18312b; font: .9rem sans-serif; }
+form { display: inline; }
