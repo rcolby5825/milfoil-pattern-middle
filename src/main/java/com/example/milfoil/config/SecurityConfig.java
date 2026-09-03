@@ -13,7 +13,7 @@ public class SecurityConfig {
     SecurityFilterChain securityFilterChain(HttpSecurity http, UserProfileService userProfileService) throws Exception {
         http
                 .authorizeHttpRequests(authorize -> authorize
-                        .requestMatchers("/", "/login", "/css/**", "/error").permitAll()
+                        .requestMatchers("/", "/login", "/css/**", "/error", "/api/**").permitAll()
                         .anyRequest().authenticated())
                 .oauth2Login(oauth -> oauth
                         .loginPage("/login")
